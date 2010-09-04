@@ -6,7 +6,7 @@ let s:start_time = localtime()
 let g:loaded_hello = 1
 
 function! Uptime()
-	let l:currentTime = localtime() - g:start_time
+	let l:currentTime = localtime() - s:start_time
 	let l:year = l:currentTime/31536000
 	let l:month = (l:currentTime%31536000)/2592000
 	let l:day = ((l:currentTime%31536000)%2592000)/86400
