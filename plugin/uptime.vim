@@ -3,7 +3,7 @@ if exists('g:loaded_uptime')
 endif
 
 let s:start_time = localtime()
-let g:loaded_hello = 1
+let g:loaded_uptime = 1
 
 function! Uptime()
 	let l:currentTime = localtime() - s:start_time
